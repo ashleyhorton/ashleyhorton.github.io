@@ -1,17 +1,49 @@
 /* Adjust the styles for headers */
-
 h1 {
-    color: #3399ff;
+    color: #3399ff; font-size: 28pt; font-family: serif;
 }
 
-/* Adjust the style for the footer */
+h3 {
+    color: #3399ff; font-size: 18pt;
+}
 
-footer {
+/* Adjust styles for all paragraphs */
+p {
+    text-align: left; font-size: 12pt;
+}
+
+/* Adjust relational selection for About Me */
+section p {
+    margin-right: 175px;
+    margin-left: 210px;
+}
+
+/* Adjust styles for main image */
+.headshot {
+    float: left;
+}
+
+/* Adjust float for Degrees and Certifications */
+
+.clear {
+    clear: left;
+}
+
+/* Adjust styles for ul degress */
+.degrees {
+    color: #ff6600;
+}
+
+.certs {
+    color: #66cc00;
+}
+
+/* Adjust the styles for footer */
+
+.footer {
     font-size: 10pt;
 }
 
-/* Adjust the styles for footer links */
-
-footer a:link, a:hover, a:focus, a:visited, a:active {
+.footer a:link, a:hover, a:focus, a:visited, a:active {
     color: #3399ff; text-decoration: none; font-size: 10pt;
 }
