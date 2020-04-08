@@ -10,8 +10,8 @@ footer {
     font-size: 10pt;
 }
 
-/* Adjust the styles for links */
+/* Adjust the styles for footer links */
 
-a:link, a:hover, a:focus, a:visited, a:active {
+footer a:link, a:hover, a:focus, a:visited, a:active {
     color: #3399ff; text-decoration: none; font-size: 10pt;
 }
