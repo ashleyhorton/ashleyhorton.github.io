@@ -5,7 +5,7 @@ body{
 
 /* Adjust body margins */
 body {
-    margin: 25px 25px 25px 25px;
+    margin: 15px;
 }
 
 /* Adjust font color for body */
@@ -33,30 +33,65 @@ p {
     font-size: 12pt;
 }
 
-/* Adjust relational selection for About Me */
+/* Adjust relational selection for About Me - index */
 section p {
     padding-right: 175px;
 }
 
-/* Adjust styles for main image */
+/* Adjust styles for main image - index */
 .headshot {
     float: left;
     padding-right: 25px;
 }
 
-/* Adjust float for Degrees and Certifications */
+/* Adjust float for Degrees and Certifications - index */
 
 .clear {
     clear: left;
 }
 
-/* Adjust styles for ul degress */
+/* Adjust styles for ul degress and certs - index */
 .degrees {
     color: #ff6600;
 }
 
 .certs {
     color: #66cc00;
+}
+
+/* Adjust styles for Background table */
+.background {
+    border: 2px solid #545454;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #545454;
+    border-collapse: collapse;
+    padding: .2em .5em;
+}
+
+th {
+    background-color: #caebf2;
+}
+
+/* Adjust styles for ul list points */
+ul {
+    list-style-type: circle;
+}
+
+/* Adjust the style for Resume link */
+#resume a:link, a:focus, a:visited, a:active {
+    font-size: 24pt;
+    text-decoration: underline;
+}
+
+#resume a:hover {
+    color: #ff3b3f;
+    font-size: 24pt;
+    text-decoration: underline;
 }
 
 /* Adjust the styles for footer */
@@ -69,10 +104,10 @@ section p {
 
 .footer {
     font-size: 10pt;
+    padding-top: 5px;
 }
 
 .footer a:link, a:hover, a:focus, a:visited, a:active {
     color: #3399ff; 
     text-decoration: none; 
-    font-size: 10pt;
 }
