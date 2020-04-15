@@ -26,6 +26,20 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
 
             <link rel="stylesheet" href="style.css">
             
+            <link rel="nav stylesheet" type="text/css" href="nav.css">
+    <style>
+        #resume a:link, #resume a:focus, #resume a:visited, #resume a:active {
+            font-size: 24pt;
+            text-decoration: none;
+    }
+
+        #resume a:hover {
+            color: #ff3b3f;
+            font-size: 24pt;
+        text-decoration: underline;
+    }        
+    </style>
+            
             <meta charset="utf-8">              
 
             <title>Resume</title>
@@ -33,15 +47,39 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         </head>
 
  <body>     
-     <section>
+
+<header>
+    <h1>Resume</h1>
+</header>
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="resume.html">Resume</a></li>
+        <li><a href="background.html">Background</a></li>
+        <li><a href="#">Projects</a>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<section>
         
-         <h2 id="resume"><a href="docs/HortonResume.pdf">Resume</a></h2>
+    <h2 id="resume"><a href="docs/HortonResume.pdf">Resume</a></h2>
          
-     </section>
-&nbsp;
-&nbsp;
-     <p class="footer"> 
-        Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a></p> 
+</section>
+<br>
+<br>
+     
+<footer> 
+    Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a>
+</footer>
      
 </body>
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
     
         <!--
 
 *****************************************************************************
 
-Title:  Basic Web Page
+Title:  Background
 
 Use:  Contains background information regarding ISLT courses from UM.
 
@@ -22,13 +23,43 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
 
 -->
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="nav stylesheet" type="text/css" href="nav.css">
+    
+   <style> 
+        h3 {
+            color: #545454;
+        }
+    </style>
+    
                <meta charset="utf-8">
-               <title>Page Title</title>
+               <title>Background</title>
 </head>
 <body>
 
+<header>
     <h1>Background</h1>
-
+</header> 
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li class="active"><a href="background.html">Background</a></li>
+        <li><a href="#">Projects</a>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<h3>Coursework at the University of Missouri</h3>
+<main>
     <table class="background">
         <tr>
             <th>Course Number</th>
@@ -60,7 +91,7 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         <tr>
             <td>9450</td>
             <td>Introduction to Research</td>
-            <td>Cored</td>
+            <td>Core</td>
             <td>Methods and ethics of research. Final project: research proposal.</td>
             <td>3</td>
             <td>Spring 2020</td>
@@ -76,6 +107,7 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
             <td>N/A</td>
         </tr>
     </table>
+</main>
     
     <h3>Remaining Coursework</h3>
     
@@ -88,12 +120,12 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         <li>Front End Analysis of Systems</li>
     </ul>
     
-    <p><em>A full list of SISLT courses and descriptions can be found at the <a href="https://sislt.missouri.edu/courses/">School of Information Science and Learning Technologies</a> webpage.</em></p>
-    
-&nbsp;
-&nbsp;
-    <p class="footer"> 
-        Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a></p> 
+    <p><small><em>A full list of SISLT courses and descriptions can be found at the <a href="https://sislt.missouri.edu/courses/">School of Information Science and Learning Technologies</a> webpage.</em></small></p>
+<br>
+<br>
+<footer> 
+    Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a>
+</footer>
     
 </body>
 </html>

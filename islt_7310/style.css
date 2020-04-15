@@ -1,15 +1,23 @@
-/* Adjust the body background color */
+/* 
+
+Title: Style.css
+
+Use: External Stylesheet
+
+Author: Ashley Horton
+
+School/Term: University of Missouri, Spring 2020
+
+Developed: March 21, 2020
+
+Validated:  April 15, 2020; Passed on Firefox and Chrome browsers.
+
+*/
+
+/* Adjust the body */
 body{
     background-color: #EFEFEF;
-}
-
-/* Adjust body margins */
-body {
     margin: 15px;
-}
-
-/* Adjust font color for body */
-body {
     color: #545454;
 }
 
@@ -82,32 +90,22 @@ ul {
     list-style-type: circle;
 }
 
-/* Adjust the style for Resume link */
-#resume a:link, a:focus, a:visited, a:active {
-    font-size: 24pt;
-    text-decoration: underline;
-}
-
-#resume a:hover {
-    color: #ff3b3f;
-    font-size: 24pt;
-    text-decoration: underline;
-}
-
 /* Adjust the styles for footer */
 
-.footer {
+footer {
     border-style: double none none none;
     border-width: 2px;
     border-color: #545454;
-}
-
-.footer {
     font-size: 10pt;
     padding-top: 5px;
 }
 
-.footer a:link, a:hover, a:focus, a:visited, a:active {
+footer a:link, a:focus, a:visited, a:active {
     color: #3399ff; 
     text-decoration: none; 
+}
+
+footer a:hover {
+    color: #3399ff;
+    text-decoration: underline;
 }
