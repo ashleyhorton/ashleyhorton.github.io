@@ -5,19 +5,19 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<!--
+        <!--
 
 *****************************************************************************
 
-Title:  Reflection
+Title:  Contact
 
-Use:  Reflection of Degree Program
+Use:  Provide form for contact
 
 Author:  Ashley Horton
 
 School/Term:  University of Missouri, Spring 2020
 
-Developed: April 14, 2020
+Developed: April 24, 2020
 
 Tested:  April 25, 2020; Passed on Firefox and Chrome browsers.
 
@@ -31,24 +31,12 @@ Tested:  April 25, 2020; Passed on Firefox and Chrome browsers.
     
     <link rel="nav stylesheet" type="text/css" href="nav2.css">
     
-    <style>
-        
-        .first-letter::first-letter {
-            font-size: 24pt;
-            font-family: fantasy;
-            color: #ff3b3f;
-        }
-        
-        .text-indent { 
-            text-indent: 2em;
-        }
-        
-    </style>
+               <title>Contact</title>
     
-               <title>Reflection</title>
+    <style>
+    </style>
 </head>
 <body>
-    
 <header>
     <nav>
         <a href="#" id="menu-icon"></a>
@@ -64,24 +52,43 @@ Tested:  April 25, 2020; Passed on Firefox and Chrome browsers.
                     <li><a href="#">Project 3</a></li>
                 </ul>
             </li>
-            <li class="active"><a href="reflection.html">Reflection</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
             <li class="lastMobile"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-    
+
 <main>
-<h3>Personal Statement</h3>
-
-<p class="first-letter">This reflection statement is still difficult for me to write as I am only in my second semester of coursework in the Educational Specialist in Learning Technologies and Design program. All I can say right now is that I have found something that combines my passions of teaching, technology, and continuous education.</p>
-
-<p class="text-indent">For now, I would like to find myself designing digital content for school districts or educational websites. However, I am also not opposed to working for other companies outside of the education field. I am open to the possibilities of my degree choice and coursework.</p>
-
-</main>
     
-<footer> 
-    Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a>
-</footer>
+    <div class="contact-form">
+        <h3 style="text-align: center">Contact Form</h3>
+        <form action="mailto:theashleyhorton@gmail.com?Subject=Professional%20Portfolio%20Message" 
+        method="post" enctype="text/plain">
+            
+            <div class="txtb">
+            <label>First Name</label>
+            <input type="text" name="First Name" placeholder="Your first name.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Last Name</label>
+            <input type="text" name="Last Name" placeholder="Your last name.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Email Address</label>
+            <input type="text" name="Email Address" placeholder="Your email address.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Message:</label>
+            <textarea></textarea>
+            </div>    
+                <br>
+            <a class="btn">Send</a>
+        </form>
+    </div>
+</main>
     
 </body>
 </html>

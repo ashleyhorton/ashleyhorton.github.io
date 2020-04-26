@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-
-    <html lang="en-US">
-
-        <head>     
+<html lang="en-US">
+<head>  
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--
 
@@ -18,15 +19,18 @@ School/Term:  University of Missouri, Spring 2020
 
 Developed: March 21, 2020
 
-Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
+Tested:  April 25, 2020; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
         -->
 
-            <link rel="stylesheet" href="style.css">
-            
-            <link rel="nav stylesheet" type="text/css" href="nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="nav stylesheet" type="text/css" href="nav2.css">
+    
     <style>
         #resume a:link, #resume a:focus, #resume a:visited, #resume a:active {
             font-size: 24pt;
@@ -36,11 +40,9 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         #resume a:hover {
             color: #ff3b3f;
             font-size: 24pt;
-        text-decoration: underline;
+            text-decoration: underline;
     }        
-    </style>
-            
-            <meta charset="utf-8">              
+    </style>            
 
             <title>Resume</title>
 
@@ -49,33 +51,29 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
  <body>     
 
 <header>
-    <h1>Resume</h1>
-</header>
-    
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="resume.html">Resume</a></li>
-        <li><a href="background.html">Background</a></li>
-        <li><a href="#">Projects</a>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-        </li>
-        <li><a href="reflection.html">Reflection</a></li>
-    </ul>
-</nav>
-<br>
-<br>
-<section>
+    <nav>
+        <a href="#" id="menu-icon"></a>
         
-    <h2 id="resume"><a href="docs/HortonResume.pdf">Resume</a></h2>
-         
-</section>
-<br>
-<br>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="resume.html">Resume</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="#">Projects</a>
+                <ul id="mobileHide">
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+     
+<main>
+    <h2 id="resume"><a href="docs/HortonResume.pdf" style="color:#2196f3">Resume</a></h2>     
+</main>
      
 <footer> 
     Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a>

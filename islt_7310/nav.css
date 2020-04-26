@@ -1,26 +1,17 @@
 /* 
-
 Title: Nav.css
-
 Use: External Stylesheet for Navigation
-
 Author: Ashley Horton
-
 School/Term: University of Missouri, Spring 2020
-
 Developed: April 13, 2020
-
-Validated:  April 9, 2020; Passed on Firefox and Chrome browsers.
-
+Validated:  April 18, 2020; Passed on Firefox and Chrome browsers.
 */
 
-
 /* Format and position the main navigation menu */
-nav {
-    top: 0px;
-}
-
 nav ul {
+    display: flex;
+    flex-direction: row;
+    top: 0px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,10 +19,7 @@ nav ul {
 
 nav ul li {
     margin-top: 0px;
-    padding: 10px 10px 10px 10px;
-    border: 2px solid #545454;
     background-color: #CAEBF2;
-    display: inline-block;
 }
 
 nav>ul li {
@@ -47,13 +35,13 @@ nav a {
     display: inline-block;
     width: 150px; /*this is important to set so our drop-down doesn't go across the page */
     margin: 2px;
-    
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #545454;
 }
 
 /* Adjust Navigation Links */
 nav a:link, nav a:hover, nav a:focus, nav a:visited, nav a:active {
     color: #FF3B3F;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -66,6 +54,7 @@ nav a:hover {
 nav ul>li ul {
     position: absolute;
     top: 100%;
+    left: 0;
     display: none;
 }
 

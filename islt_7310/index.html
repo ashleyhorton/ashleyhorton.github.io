@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-
 <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--
 
@@ -18,72 +20,62 @@ School/Term:  University of Missouri, Spring 2020
 
 Developed: March 21, 2020
 
-Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
+Tested:  April 25, 2020; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
     -->
+   
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="style.css">
     
-    <link rel="nav stylesheet" type="text/css" href="nav.css">
-
-            <meta charset="utf-8">
+    <link rel="nav stylesheet" type="text/css" href="nav2.css">
 
             <title>Home Page</title>
 
 </head>
 
 <body>
-    
 <header>
-    <h1>Ashley Horton</h1>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="#">Projects</a>
+                <ul id="mobileHide">
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
+<main id="index">
+<h2><strong>Welcome to my online portfolio!</strong></h2>
     
-<nav>
-    <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="background.html">Background</a></li>
-        <li><a href="#">Projects</a>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-        </li>
-        <li><a href="reflection.html">Reflection</a></li>
-    </ul>
-</nav>
-    
-<br>
-<br>
-    
-<p><strong>Welcome to my online portfolio!</strong></p>
-    
-<main>
     <p>My purpose for creating this website is to showcase my design and development expertise through the Learning Technologies and Design program at the University of Missouri.</p>
-</main>
 
-<p class="headshot"><img src="images/headshot.png" alt="Ashley Horton Headshot"></p>
+    <p class="headshot"><img src="images/headshot.png" alt="Ashley Horton Headshot"></p>
     
-<section>
-
     <h3>About Me</h3>
     <p>I live in Ozark, Missouri with my husband, two boys, and two dogs. My husband teaches high school science, my oldest is six and started kindergarten this year, and my youngest will be three in July and runs the house. I have a passion for all things technology and design and I’m an avid book reader.</p> 
     
     <p>I have been an elementary educator for the past nine years. I have experience teaching grades third through sixth as well as summer school experience with early elementary. I have a Master of Arts degree in K-12 School Administration and currently working on my Educational Specialist in Learning Technologies and Design. My long-term goal is to work as an instructional designer, preferably for a curriculum company or university. My top five strengths are communication, significance, empathy, strategic, and futuristic.</p>
     
     <blockquote><em>"If we want to change things, we must first change ourselves. If we want to play - if we want to change the world - we must first show up on the field to score." - Paul Rusesabagina</em></blockquote>
-</section>
-    
-    <h3 class="clear">Degrees and Certifications</h3>
     
     <ul>
     
-        <li><strong>Degrees</strong>
+        <li><h4>Degrees</h4>
         
-            <ul class="degrees">
+            <ul>
             
                 <li>Bachelor of Science - Elementary Education</li>
                 
@@ -95,9 +87,9 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         
         </li>
         
-        <li><strong>Certifications</strong>
+        <li><h4>Certifications</h4>
 
-            <ul class="certs">
+            <ul>
             
                 <li>Elementary Education, Grades 1-6</li>
                 
@@ -121,15 +113,14 @@ Tested:  April 9, 2020; Passed on Firefox and Chrome browsers.
         
         <li><strong>Anticipated Graduation Date:</strong> Fall 2021</li>
         
-        <li><em>All program goals and competencies can be found at the <a href="https://sislt.missouri.edu/lt/learning-technologies-design/" target="_blank">Learning Technologies and Design</a> program webpage.</em></li>
+        <li class="link"><em><small>All program goals and competencies can be found at the <strong><a href="https://sislt.missouri.edu/lt/learning-technologies-design/" style="color:#2196f3" target="_blank">Learning Technologies and Design</a></strong> program webpage.</small></em></li>
     
     </ul>  
-<br>
-<br>
+</main>
+
 <footer> 
     Copyright &copy; 2020 Ashley Horton, <a href="mailto:adqhd@mail.missouri.edu">adqhd@mail.missouri.edu</a>
 </footer>
 
 </body>
-
 </html>
