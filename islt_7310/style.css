@@ -67,6 +67,7 @@ p {
 ul {
     list-style-type: circle;
     font-family: "Poppins", sans-serif;
+    font-size: 12pt;
     margin-top: 0px
 }
 
@@ -150,12 +151,26 @@ input[type=submit] {
     width: 100%;
 }
 
+/* Responsive styles for iframe-container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 260px;
+}
+ 
+.iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+}
+
 /* Adjust the styles for footer */
 footer {
     border-style: double none none none;
     border-width: 2px;
     border-color: #545454;
-    background: #000;
+    background-image: url(images/footer_background.jpg);
     font-size: 10pt;
     color: #fff;
     padding-top: 5px;
@@ -174,6 +189,22 @@ footer a:hover {
     text-decoration: underline;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
+}
+
+#phone_icon {
+    color: #fff;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 8px;
+}
+
+#email_icon {
+    color: #fff;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 8px;
 }
 
 /* Responsive layout for contact form */
