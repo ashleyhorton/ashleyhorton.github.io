@@ -7,6 +7,7 @@ Developed: March 21, 2020
 Validated:  April 25, 2020; Passed on Firefox and Chrome browsers.
 */
 
+/* Adjust style for main margins */
 main {
     width: 80%;
     margin-left: 10%;
@@ -15,44 +16,190 @@ main {
 
 /* Adjust the body */
 body{
-    background-color: #EFEFEF;
+    background-color: #104E61;
     margin: 15px;
     color: #545454;
     font-family: "Poppins", sans-serif;
 }
 
+/* Styles for Index page */
+#index {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+/* Create two unequal columns that float next to each other - Index */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 55%;
+}
+
+/* Clear floats after the columns - Index */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust style for Resume */
+#resume {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Adjust style for Background */
+#background {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+/* Adjust style for Reflection */
+#reflection {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+/* Adjust style for Landing */
+#landing {
+    background-image: url(images/landing_background.jpg);
+    background-size: cover;
+}
+
+#cover {
+    width: 60%;
+    max-width: 600px;
+    background: #fff;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+}
+
+/* Button for Landing */
+.button {
+    background-color: #29CDAE;
+    color: #ffffff;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Arrows on Landing button */
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Adjust styles for Social icons */
+#linkedin {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(140%, 400%)
+}
+
+#twitter {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(270%, 400%)
+}
+
+#instagram {
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 40%;
+    transform: translate(400%, 400%)
+}
+
 /* Adjust the styles for headers */
 h1 {
-    background-color: #CAEBF2;
-    border: 2px solid #545454;
-    color: #2196f3; 
+    color: #29CDAE; 
     font-size: 28pt; 
     font-family: "Poppins", sans-serif;
 }
 
 h2 {
-    color: #2196f3;
+    color: #29CDAE;
     font-size: 22pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
 }
 
 h3 {
-    color: #2196f3; 
+    color: #29CDAE; 
     font-size: 18pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
 }
 
 h4 {
-    color: #545454;
+    color: #29CDAE;
     font-size: 14pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
 }
 
+/* Adjust style for blockquote */
 blockquote {
     font-family: "Poppins", sans-serif;
+    font-size: 12pt;
 }
 
 /* Adjust styles for all paragraphs */
@@ -71,30 +218,25 @@ ul {
     margin-top: 0px
 }
 
-/*Adjust the styles for links */
+/* Adjust styles for links */
 p a:link, a:focus, a:visited, a:active {
     list-style-type: none;
     color: #2196f3;
 }
 
-/* Adjust relational selection for About Me - index */
-    section p {
-        padding-right: 175px;
+#resume_link a:link, a:focus, a:visited, a:active {
+    list-style-type: none;
+    color: #2196f3;
 }
         
 /* Adjust styles for main image - index */
-    .headshot {
-        max-width: 100%;
-        height: auto;
-        float: left;
-        padding-right: 10px;
+#headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
-        
-/* Adjust float for Degrees and Certifications - index */
-    .clear {
-        clear: left;
-}
-        
+
+/*Link style - Index */
     .link {
         list-style-type: none;
 }
@@ -107,7 +249,8 @@ p a:link, a:focus, a:visited, a:active {
     position: relative;
     top: 350px;
     left: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    margin-top: 15px;
     transform: translate(-50%, -50%);
     padding: 30px 40px;
     box-sizing: border-box;
@@ -128,6 +271,7 @@ p a:link, a:focus, a:visited, a:active {
     text-align: left;
     color: #545454;
     text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
 }    
 
@@ -136,33 +280,45 @@ p a:link, a:focus, a:visited, a:active {
     border: none;
     background: none;
     outline: none;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     margin-top: 6px;
 }
 
 input[type=submit] {
     display: inline-block;
-    background: #000;
+    background: #29CDAE;
     padding: 14px 0;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 8px;
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 /* Responsive styles for iframe-container */
+#resume_link {
+    text-align: center;
+    font-size: 16pt;
+}
+
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 380px;
+    padding-bottom: 56.25%;
+    height: 0;
 }
- 
+
 .iframe-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
 }
 
 /* Adjust the styles for footer */
@@ -170,40 +326,67 @@ footer {
     border-style: double none none none;
     border-width: 2px;
     border-color: #545454;
-    background-image: url(images/footer_background.jpg);
+    background-image: url(images/footer_background_white.jpg);
     font-size: 10pt;
-    color: #fff;
+    color: #545454;
+    font-weight: bold;
     padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     font-family: "Poppins", sans-serif;
 }
 
 footer a:link, a:focus, a:visited, a:active {
-    color: #fff;
+    color: #545454;
     text-decoration: none; 
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 footer a:hover {
     color: #3399ff;
     text-decoration: underline;
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 #phone_icon {
-    color: #fff;
+    color: #545454;
     text-decoration: none; 
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 8px;
 }
 
 #email_icon {
-    color: #fff;
+    color: #545454;
     text-decoration: none; 
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+#twitter_icon {
+    color: #545454;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+#instagram_icon {
+    color: #545454;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+#linkedin_icon {
+    color: #545454;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     font-size: 8px;
 }
 
