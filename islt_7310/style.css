@@ -217,6 +217,9 @@ ul {
     font-size: 12pt;
     margin-top: 0px
 }
+#ul_bullet /* Education Overview Index list */ {
+    list-style-type: none;
+}
 
 /* Adjust styles for links */
 p a:link, a:focus, a:visited, a:active {
@@ -401,5 +404,68 @@ footer a:hover {
     #index, .headshot {
         width: auto;
         float: none;
+    }
+}
+
+
+#media_print {
+    display: none;
+}
+/* Print Stylesheet */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", serif;
+    }  
+    
+    nav {
+        display: none;
+    }
+    
+    a[href]::after {
+        content: " [" attr(href)"]";
+        color: #000;
+    }
+    
+    @page :first {
+        margin-top: 2cm;
+    }
+    
+    h2, h3, ul {
+        page-break-after: avoid;
+    }
+    
+    p, {
+        orphans: 3;
+        widows: 3;
+        font-size: 11pt;
+    }
+    
+    #media_print {
+        display: contents;
+    }
+    
+    footer {
+    border-style: double none none none;
+    border-width: 2px;
+    border-color: #000;
+    background-image: none;
+    font-size: 10pt;
+    color: #000;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: "Poppins", serif;
+    }
+    
+    #email_icon, #phone_icon {
+        display: none;
     }
 }
