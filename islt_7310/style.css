@@ -441,7 +441,7 @@ footer a:hover {
         page-break-after: avoid;
     }
     
-    p, {
+    p {
         orphans: 3;
         widows: 3;
         font-size: 11pt;
