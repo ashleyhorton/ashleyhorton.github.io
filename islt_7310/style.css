@@ -70,6 +70,7 @@ body{
     background-color: #fff;
     padding: 0px 15px 2px 15px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 /* Adjust style for Reflection */
@@ -470,6 +471,37 @@ footer a:hover {
     font-size: 8px;
 }
 
+/* Adjust styles for Background table */
+.background {
+    border: 2px solid #545454;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    width: 100%;
+    font-size: 10pt;
+}
+
+th, td {
+    border: 1px solid #545454;
+    border-collapse: collapse;
+    padding: .2em .5em;
+}
+
+thead {
+    background: #E8E8E8;
+}
+tr:nth-child(even) {
+    background: #E8E8E8;
+}
+
+figcaption {
+    color: #29CDAE;
+    font-size: 22pt;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Responsive layout for contact form */
 @media screen and (max-width: 600px) {
     .firstname, .lastname, .email, .message {
@@ -483,6 +515,22 @@ footer a:hover {
         float: none;
     }
 }
+
+/* Responsive layout for background.html */
+@media screen and (max-width: 900px) {
+    th {
+        display: none;
+    }
+/* hide course type, description, hours, semester, grade  */
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(6) {
+        display:none;
+    }
+}
+
 
 #media_print {
     display: none;
