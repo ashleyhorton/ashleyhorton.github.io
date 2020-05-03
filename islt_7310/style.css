@@ -4,7 +4,7 @@ Use: External Stylesheet
 Author: Ashley Horton
 School/Term: University of Missouri, Spring 2020
 Developed: March 21, 2020
-Validated:  April 25, 2020; Passed on Firefox and Chrome browsers.
+Validated:  May 2, 2020; Passed on Firefox and Chrome browsers.
 */
 
 /* Adjust style for main margins */
@@ -29,7 +29,7 @@ body{
     margin-bottom: 25px;
 }
 
-/* Create two unequal columns that float next to each other - Index */
+/* Create two unequal s that float next to each other - Index */
 * {
   box-sizing: border-box;
 }
@@ -116,6 +116,10 @@ body{
     border-radius: 4px;
 }
 
+.button:hover {
+    background: #104E61;
+}
+
 /* Arrows on Landing button */
 .button span {
   cursor: pointer;
@@ -134,7 +138,7 @@ body{
 }
 
 .button:hover span {
-  padding-right: 25px;
+    padding-right: 25px; 
 }
 
 .button:hover span:after {
@@ -228,10 +232,16 @@ p a:link, a:focus, a:visited, a:active {
 }
 
 #resume_link a:link, a:focus, a:visited, a:active {
-    list-style-type: none;
     color: #2196f3;
+    font-weight: bold;
 }
-        
+
+#resume_link a:hover {
+    background: #29CDAE;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 /* Adjust styles for main image - index */
 #headshot {
         display: block;
@@ -240,8 +250,20 @@ p a:link, a:focus, a:visited, a:active {
 }
 
 /*Link style - Index */
-    .link {
+.link {
         list-style-type: none;
+}
+
+/*Link style - Background */
+#sislt {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+#sislt:hover {
+    background: #29CDAE;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /* Form CSS */
@@ -302,6 +324,10 @@ input[type=submit] {
     font-weight: bold;
 }
 
+input[type=submit]:hover {
+    background: #104E61;
+}
+
 /* Responsive styles for iframe-container */
 #resume_link {
     text-align: center;
@@ -322,6 +348,49 @@ input[type=submit] {
     width: 100%;
     height: 100%;
     padding-top: 15px;
+}
+
+/* Adjust style for Projects */
+#projects_intro {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+#project1 {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+#project2 {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+#project3 {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+#pdf_website {
+    color: #2196f3;
+}
+
+#pdf_website:hover {
+    background: #29CDAE;
+    color: #ffffff;
+}
+
+#pdf_website2 {
+    color: #2196f3;
+}
+
+#pdf_website2:hover {
+    background: #29CDAE;
+    color: #ffffff;
 }
 
 /* Adjust the styles for footer */
@@ -353,6 +422,10 @@ footer a:hover {
     font-weight: bold;
 }
 
+#phone:hover {
+    transform: scale(3);
+}
+
 #phone_icon {
     color: #545454;
     text-decoration: none; 
@@ -367,6 +440,10 @@ footer a:hover {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 8px;
+}
+
+.email_icon:hover, .phone_icon:hover {
+    transform: scale(1.5);
 }
 
 #twitter_icon {
