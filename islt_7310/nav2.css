@@ -44,7 +44,8 @@ header ul li {
 }
 
 header ul li:hover {
-    background: #2196f3;
+    background: #29CDAE;
+    color: #ffffff;
 }
 
 header ul li:last-child {
