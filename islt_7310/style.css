@@ -35,16 +35,19 @@ body{
 }
 
 .column {
-  float: left;
-  padding: 10px;
+    float: left;
+    padding: 10px;
+    width: 50%;
 }
 
-.left {
-  width: 35%;
+.column_left {
+    width: 35%;
+    float: left;
 }
 
-.right {
-  width: 55%;
+.column_right {
+    float: right;
+    width: 65%;
 }
 
 /* Clear floats after the columns - Index */
@@ -52,6 +55,36 @@ body{
   content: "";
   display: table;
   clear: both;
+}
+
+/* Flex boxes for Index page */
+.flex_goals {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffffff;
+}
+
+.flex_goals > div {
+    background: #E8E8E8;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    padding-top:
+}
+
+.h3_goal {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.p_goal {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+    color: #545454;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 /* Adjust style for Resume */
@@ -143,6 +176,54 @@ body{
 }
 
 .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Buttons for Index page - goals */
+.button_goals {
+    background-color: #29CDAE;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.button_goals:hover {
+    background: #104E61;
+}
+
+/* Arrows on Goals buttons */
+.button_goals span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_goals span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_goals:hover span {
+    padding-right: 25px; 
+}
+
+.button_goals:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -248,6 +329,7 @@ p a:link, a:focus, a:visited, a:active {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 25px;
 }
 
 /*Link style - Index */
@@ -351,26 +433,26 @@ input[type=submit]:hover {
     padding-top: 15px;
 }
 
-/* Adjust style for Projects */
-#projects_intro {
+/* Adjust style for Goals */
+#goals_intro {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
     margin-bottom: 25px;
 }
 
-#project1 {
+#goal1 {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
     margin-bottom: 25px;
 }
 
-#project2 {
+#goal2 {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
     margin-bottom: 25px;
 }
 
-#project3 {
+#goal3 {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
     margin-bottom: 25px;
@@ -407,6 +489,7 @@ footer {
     padding-left: 10px;
     padding-bottom: 5px;
     font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
 footer a:link, a:focus, a:visited, a:active {
@@ -510,11 +593,22 @@ figcaption {
     }
     
 /* Responsive layout for index.html */
-    #index, .headshot {
-        width: auto;
-        float: none;
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 100%;
+        }
+        .column_right {
+            float: none;
+            width: 100%;
+        }
+        .column_left {
+            float: none;
+            width: 100%;
+        }
+        blockquote {
+            display: none;
+        }
     }
-}
 
 /* Responsive layout for background.html */
 @media screen and (max-width: 900px) {
