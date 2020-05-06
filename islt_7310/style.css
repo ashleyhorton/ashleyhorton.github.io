@@ -85,12 +85,12 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
+    height: 195px;
 }
 
 /* Adjust style for Resume */
 #resume {
     background-color: #fff;
-    padding: 0px 15px 2px 15px; 
     margin-top: 25px;
     margin-bottom: 25px;
     width: 50%;
@@ -268,6 +268,10 @@ h2 {
     margin-bottom: 0px;
 }
 
+#h2_goals {
+    margin-top: -30px;
+}
+
 h3 {
     color: #29CDAE; 
     font-size: 18pt;
@@ -434,6 +438,50 @@ input[type=submit]:hover {
 }
 
 /* Adjust style for Goals */
+
+#main_goals {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+#portfolio_page {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Flex boxes for Portfolio Page */
+.flex_portfolio {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffffff;
+    height: 250px;
+}
+
+.flex_portfolio > div {
+    background: #E8E8E8;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    padding-top:
+}
+
+/* Flex boxes for Index page */
+.flex_intro {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffffff;
+}
+
+.flex_intro > div {
+    background: #E8E8E8;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    padding-top:
+}
+
 #goals_intro {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
