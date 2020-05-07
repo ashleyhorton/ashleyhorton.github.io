@@ -4,7 +4,7 @@ Use: External Stylesheet
 Author: Ashley Horton
 School/Term: University of Missouri, Spring 2020
 Developed: March 21, 2020
-Validated:  May 2, 2020; Passed on Firefox and Chrome browsers.
+Validated:  May 7, 2020; Passed on Firefox and Chrome browsers.
 */
 
 /* Adjust style for main margins */
@@ -15,102 +15,11 @@ main {
 }
 
 /* Adjust the body */
-body{
+body {
     background-color: #104E61;
     margin: 15px;
     color: #545454;
     font-family: "Poppins", sans-serif;
-}
-
-/* Styles for Index page */
-#index {
-    background-color: #fff;
-    padding: 0px 15px 2px 15px;
-    margin-bottom: 25px;
-}
-
-/* Create two unequal s that float next to each other - Index */
-* {
-  box-sizing: border-box;
-}
-
-.column {
-    float: left;
-    padding: 10px;
-    width: 50%;
-}
-
-.column_left {
-    width: 35%;
-    float: left;
-}
-
-.column_right {
-    float: right;
-    width: 65%;
-}
-
-/* Clear floats after the columns - Index */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Flex boxes for Index page */
-.flex_goals {
-    display: flex;
-    flex-wrap: nowrap;
-    background: #ffffff;
-}
-
-.flex_goals > div {
-    background: #E8E8E8;
-    border-radius: 10px;
-    width: 100%;
-    margin: 10px;
-    padding-top:
-}
-
-.h3_goal {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.p_goal {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 12pt;
-    color: #545454;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    height: 195px;
-}
-
-/* Adjust style for Resume */
-#resume {
-    background-color: #fff;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-/* Adjust style for Background */
-#background {
-    background-color: #fff;
-    padding: 0px 15px 2px 15px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-
-/* Adjust style for Reflection */
-#reflection {
-    background-color: #fff;
-    padding: 0px 15px 2px 15px;
-    margin-bottom: 25px;
 }
 
 /* Adjust style for Landing */
@@ -131,7 +40,7 @@ body{
     position: fixed;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 /* Button for Landing */
@@ -178,6 +87,125 @@ body{
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* Adjust styles for Social icons */
+#linkedin {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(140%, 400%);
+}
+
+#twitter {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(270%, 400%);
+}
+
+#instagram {
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 40%;
+    transform: translate(400%, 400%);
+}
+
+/* Styles for Index page */
+#index {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+}
+
+/* Create two unequal columns that float next to each other - Index */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    width: 50%;
+}
+
+.column_left {
+    width: 35%;
+    float: left;
+}
+
+.column_right {
+    float: right;
+    width: 65%;
+}
+
+/* Clear floats after the columns - Index */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust main image - index */
+#headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 25px;
+}
+
+/* Adjust style for blockquote */
+figcaption {
+    color: #29CDAE;
+    font-size: 22pt;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+blockquote {
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+}
+
+/*Link style - Index */
+.link {
+        list-style-type: none;
+}
+
+/* Flex boxes for Index page */
+.flex_goals {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffffff;
+    flex-direction: row;
+}
+
+.flex_goals > div {
+    flex: 1;
+    background: #E8E8E8;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    padding-top: 5px;
+    line-height: 1.6;
+}
+
+/* Formatting for p on Index */
+.p_goal {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+    color: #545454;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    height: 195px;
 }
 
 /* Buttons for Index page - goals */
@@ -228,30 +256,96 @@ body{
   right: 0;
 }
 
-/* Adjust styles for Social icons */
-#linkedin {
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 40%;
-    transform: translate(140%, 400%)
+/* Adjust style for Resume */
+#resume {
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-#twitter {
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 40%;
-    transform: translate(270%, 400%)
+#resume_link a:link, a:focus, a:visited, a:active {
+    color: #2196f3;
+    font-weight: bold;
 }
 
-#instagram {
+#resume_link a:hover {
+    background: #29CDAE;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Responsive styles for iframe-container - Video Resume*/
+#resume_link {
     text-align: center;
-    position: fixed;
-    display: inline-block;
-    top: 50%;
-    left: 40%;
-    transform: translate(400%, 400%)
+    font-size: 16pt;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+
+/* Adjust style for Coursework */
+#background {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* Adjust styles for Coursework table */
+.background {
+    border: 2px solid #545454;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    width: 100%;
+    font-size: 10pt;
+}
+
+th, td {
+    border: 1px solid #545454;
+    border-collapse: collapse;
+    padding: .2em .5em;
+}
+
+thead {
+    background: #E8E8E8;
+}
+tr:nth-child(even) {
+    background: #E8E8E8;
+}
+
+/*Link style - Coursework */
+#sislt {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+#sislt:hover {
+    background: #29CDAE;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Adjust style for Reflection */
+#reflection {
+    background-color: #fff;
+    padding: 0px 15px 2px 15px;
+    margin-bottom: 25px;
 }
 
 /* Adjust the styles for headers */
@@ -268,6 +362,7 @@ h2 {
     margin-bottom: 0px;
 }
 
+/* h2 for portfolio */  
 #h2_goals {
     margin-top: -30px;
 }
@@ -279,17 +374,17 @@ h3 {
     margin-bottom: 0px;
 }
 
+/* h3 for index */
+.h3_goal {
+    margin-top: 5px;
+    text-align: center;
+}
+
 h4 {
     color: #29CDAE;
     font-size: 14pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
-}
-
-/* Adjust style for blockquote */
-blockquote {
-    font-family: "Poppins", sans-serif;
-    font-size: 12pt;
 }
 
 /* Adjust styles for all paragraphs */
@@ -305,9 +400,11 @@ ul {
     list-style-type: circle;
     font-family: "Poppins", sans-serif;
     font-size: 12pt;
-    margin-top: 0px
+    margin-top: 0px;
 }
-#ul_bullet /* Education Overview Index list */ {
+
+/* Education Overview Index list */
+#ul_bullet {
     list-style-type: none;
 }
 
@@ -317,43 +414,7 @@ p a:link, a:focus, a:visited, a:active {
     color: #2196f3;
 }
 
-#resume_link a:link, a:focus, a:visited, a:active {
-    color: #2196f3;
-    font-weight: bold;
-}
-
-#resume_link a:hover {
-    background: #29CDAE;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-/* Adjust styles for main image - index */
-#headshot {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 25px;
-}
-
-/*Link style - Index */
-.link {
-        list-style-type: none;
-}
-
-/*Link style - Background */
-#sislt {
-    color: #2196f3;
-    font-weight: bold;
-}
-
-#sislt:hover {
-    background: #29CDAE;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-/* Form CSS */
+/* Contact form CSS */
 .contact-form {
     width: 85%;
     max-width: 600px;
@@ -364,7 +425,7 @@ p a:link, a:focus, a:visited, a:active {
     margin-bottom: 25px;
     margin-top: 35px;
     transform: translate(-50%, -50%);
-    padding: 30px 40px;
+    padding: 10px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
@@ -415,30 +476,7 @@ input[type=submit]:hover {
     background: #104E61;
 }
 
-/* Responsive styles for iframe-container */
-#resume_link {
-    text-align: center;
-    font-size: 16pt;
-}
-
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 15px;
-}
-
 /* Adjust style for Goals */
-
 #main_goals {
     background-color: #fff;
     padding: 0px 15px 2px 15px;
@@ -456,7 +494,6 @@ input[type=submit]:hover {
     display: flex;
     flex-wrap: nowrap;
     background: #ffffff;
-    height: 250px;
 }
 
 .flex_portfolio > div {
@@ -464,28 +501,8 @@ input[type=submit]:hover {
     border-radius: 10px;
     width: 100%;
     margin: 10px;
-    padding-top:
-}
-
-/* Flex boxes for Index page */
-.flex_intro {
-    display: flex;
-    flex-wrap: nowrap;
-    background: #ffffff;
-}
-
-.flex_intro > div {
-    background: #E8E8E8;
-    border-radius: 10px;
-    width: 100%;
-    margin: 10px;
-    padding-top:
-}
-
-#goals_intro {
-    background-color: #fff;
-    padding: 0px 15px 2px 15px;
-    margin-bottom: 25px;
+    flex-direction: column;
+    height: 330px;
 }
 
 #goal1 {
@@ -602,64 +619,45 @@ footer a:hover {
     font-size: 8px;
 }
 
-/* Adjust styles for Background table */
-.background {
-    border: 2px solid #545454;
-    border-collapse: collapse;
-    table-layout: fixed; 
-    width: 100%;
-    font-size: 10pt;
-}
-
-th, td {
-    border: 1px solid #545454;
-    border-collapse: collapse;
-    padding: .2em .5em;
-}
-
-thead {
-    background: #E8E8E8;
-}
-tr:nth-child(even) {
-    background: #E8E8E8;
-}
-
-figcaption {
-    color: #29CDAE;
-    font-size: 22pt;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 0px;
-    text-align: center;
-    font-weight: bold;
-}
-
 /* Responsive layout for contact form */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .firstname, .lastname, .email, .message {
         width: 100%;
         margin-top: 0;
     }
+}
     
-/* Responsive layout for index.html */
-    @media screen and (max-width: 650px) {
+/* Responsive layout for index - top half*/
+    @media screen and (max-width: 750px) {
         .column {
             width: 100%;
         }
         .column_right {
             float: none;
             width: 100%;
+            flex-wrap: wrap;
         }
         .column_left {
             float: none;
             width: 100%;
+            flex-wrap: wrap;
         }
         blockquote {
             display: none;
         }
     }
 
+/* Responsive layout for index - flex boxes - bottom half */
+@media screen and (max-width: 900px) {
+    .flex_goals, .flex_portfolio, #goal1, #goal2, #goal3 {
+        display: inline-flex;
+        flex-wrap: wrap;
+        background: #ffffff;
+            }
+    }
+
 /* Responsive layout for background.html */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     th {
         display: none;
     }
@@ -673,12 +671,13 @@ figcaption {
     }
 }
 
-
+/* Print Stylesheet */
+    
+/* h1 on Index - hide for media print */
 #media_print {
     display: none;
 }
-
-/* Print Stylesheet */
+    
 @media print {
     * {
         background: transparent !important;
