@@ -45,7 +45,7 @@ body {
 
 /* Button for Landing */
 .button {
-    background-color: #29CDAE;
+    background-color: #20a28a;
     color: #ffffff;
     padding: 15px 32px;
     display: inline-block;
@@ -141,7 +141,7 @@ body {
 
 /* Adjust style for blockquote */
 figcaption {
-    color: #29CDAE;
+    color: #20a28a;
     font-size: 22pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -191,7 +191,7 @@ blockquote {
 
 /* Buttons for Index page - goals */
 .button_goals {
-    background-color: #29CDAE;
+    background-color: #20a28a;
     color: #ffffff;
     padding: 10px;
     display: block;
@@ -253,7 +253,7 @@ blockquote {
 }
 
 #resume_link a:hover {
-    background: #29CDAE;
+    background: #20a28a;
     color: #ffffff;
     font-weight: bold;
 }
@@ -317,7 +317,7 @@ tr:nth-child(even) {
 }
 
 #sislt:hover {
-    background: #29CDAE;
+    background: #20a28a;
     color: #ffffff;
     font-weight: bold;
 }
@@ -331,13 +331,13 @@ tr:nth-child(even) {
 
 /* Adjust the styles for headers */
 h1 {
-    color: #29CDAE; 
+    color: #20a28a; 
     font-size: 28pt; 
     font-family: "Poppins", sans-serif;
 }
 
 h2 {
-    color: #29CDAE;
+    color: #20a28a;
     font-size: 22pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -349,7 +349,7 @@ h2 {
 }
 
 h3 {
-    color: #29CDAE; 
+    color: #20a28a; 
     font-size: 18pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -362,7 +362,7 @@ h3 {
 }
 
 h4 {
-    color: #29CDAE;
+    color: #20a28a;
     font-size: 14pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -405,7 +405,7 @@ p a:link, a:focus, a:visited, a:active {
     left: 50%;
     margin-bottom: 25px;
     margin-top: 35px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     padding: 10px 40px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -441,7 +441,7 @@ p a:link, a:focus, a:visited, a:active {
 
 input[type=submit] {
     display: inline-block;
-    background: #29CDAE;
+    background: #20a28a;
     padding: 14px 0;
     color: #fff;
     text-transform: uppercase;
@@ -509,7 +509,7 @@ input[type=submit]:hover {
 }
 
 #pdf_website:hover {
-    background: #29CDAE;
+    background: #20a28a;
     color: #ffffff;
 }
 
@@ -518,7 +518,7 @@ input[type=submit]:hover {
 }
 
 #pdf_website2:hover {
-    background: #29CDAE;
+    background: #20a28a;
     color: #ffffff;
 }
 
