@@ -45,7 +45,7 @@ body {
 
 /* Button for Landing */
 .button {
-    background-color: #20a28a;
+    background-color: #1F8976;
     color: #ffffff;
     padding: 15px 32px;
     display: inline-block;
@@ -141,7 +141,7 @@ body {
 
 /* Adjust style for blockquote */
 figcaption {
-    color: #20a28a;
+    color: #1F8976;
     font-size: 22pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -191,7 +191,7 @@ blockquote {
 
 /* Buttons for Index page - goals */
 .button_goals {
-    background-color: #20a28a;
+    background-color: #1F8976;
     color: #ffffff;
     padding: 10px;
     display: block;
@@ -253,7 +253,7 @@ blockquote {
 }
 
 #resume_link a:hover {
-    background: #20a28a;
+    background: #1F8976;
     color: #ffffff;
     font-weight: bold;
 }
@@ -317,7 +317,7 @@ tr:nth-child(even) {
 }
 
 #sislt:hover {
-    background: #20a28a;
+    background: #1F8976;
     color: #ffffff;
     font-weight: bold;
 }
@@ -331,13 +331,13 @@ tr:nth-child(even) {
 
 /* Adjust the styles for headers */
 h1 {
-    color: #20a28a; 
+    color: #1F8976; 
     font-size: 28pt; 
     font-family: "Poppins", sans-serif;
 }
 
 h2 {
-    color: #20a28a;
+    color: #1F8976;
     font-size: 22pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -349,7 +349,7 @@ h2 {
 }
 
 h3 {
-    color: #20a28a; 
+    color: #1F8976; 
     font-size: 18pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -362,7 +362,7 @@ h3 {
 }
 
 h4 {
-    color: #20a28a;
+    color: #1F8976;
     font-size: 14pt;
     font-family: "Poppins", sans-serif;
     margin-bottom: 0px;
@@ -441,7 +441,7 @@ p a:link, a:focus, a:visited, a:active {
 
 input[type=submit] {
     display: inline-block;
-    background: #20a28a;
+    background: #1F8976;
     padding: 14px 0;
     color: #fff;
     text-transform: uppercase;
@@ -509,7 +509,7 @@ input[type=submit]:hover {
 }
 
 #pdf_website:hover {
-    background: #20a28a;
+    background: #1F8976;
     color: #ffffff;
 }
 
@@ -518,7 +518,7 @@ input[type=submit]:hover {
 }
 
 #pdf_website2:hover {
-    background: #20a28a;
+    background: #1F8976;
     color: #ffffff;
 }
 
