@@ -4,7 +4,7 @@ Use: External Stylesheet
 Author: Ashley Horton
 School/Term: University of Missouri, Spring 2020
 Developed: March 21, 2020
-Validated:  May 12, 2020; Passed on Firefox and Chrome browsers.
+Validated:  May 16, 2020; Passed on Firefox and Chrome browsers.
 */
 
 /* Adjust style for main margins */
@@ -368,6 +368,13 @@ h4 {
     margin-bottom: 0px;
 }
 
+.objectives {
+    color: #1F8976;
+    font-size: 14pt;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0px;
+}
+
 /* Adjust styles for all paragraphs */
 p {
     text-align: left; 
@@ -483,7 +490,7 @@ input[type=submit]:hover {
     width: 100%;
     margin: 10px;
     flex-direction: column;
-    height: 330px;
+    height: 250px;
 }
 
 #goal1 {
@@ -504,20 +511,20 @@ input[type=submit]:hover {
     margin-bottom: 25px;
 }
 
-#pdf_website {
+.pdf_website {
     color: #2196f3;
 }
 
-#pdf_website:hover {
+.pdf_website:hover {
     background: #1F8976;
     color: #ffffff;
 }
 
-#pdf_website2 {
+.pdf_website2 {
     color: #2196f3;
 }
 
-#pdf_website2:hover {
+.pdf_website2:hover {
     background: #1F8976;
     color: #ffffff;
 }
@@ -635,7 +642,10 @@ footer a:hover {
         flex-wrap: wrap;
         background: #ffffff;
             }
+    #main_goals {
+        display: none;
     }
+}
 
 /* Responsive layout for background.html */
 @media screen and (max-width: 750px) {
