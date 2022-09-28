@@ -1,0 +1,146 @@
+/*
+Title: Nav2.css
+Use: External Stylesheet
+Author: Ashley Horton
+School/Term: University of Missouri, Spring 2020
+Developed: March 23, 2020
+Validated:  May 12, 2020; Passed on Firefox and Chrome browsers.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 14pt;
+}
+
+nav a:link, a:focus, a:visited, a:active {
+    list-style-type: none;
+    color: #545454;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-image: url(images/footer_background_white.jpg);
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 0px;
+    transition: 0.5s;
+    border-right: 1px solid grey;
+}
+
+header ul li:hover {
+    background: #29CDAE;
+    color: #ffffff;
+}
+
+header ul li:last-child {
+   border-right: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #545454;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: #fff;
+    display: block;
+    width: 90px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid grey;
+}
+
+#logo {
+    margin: 3px;
+    float: left;
+    width: 150px;
+    height: 89px;
+    background: url(images/logo.png) no-repeat center;
+    display: block;
+}
+
+#menu-icon {
+    background: url(images/menu-icon.png) no-repeat center;
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 640px) {
+
+    header ul {
+        display: none;
+    }
+    
+    #menu-icon {
+        display: inline-block;
+    }
+    
+    header ul li {
+        display: block;
+        background: #fff;
+        z-index: 5;
+    }
+    
+    header ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+    
+    header ul li:last-child {
+        border-right: none;
+}
+
+    header ul li:hover {
+        background: #2196f3;
+    }
+    
+    header:hover #mobileHide {
+        display: none;
+    }
+    
+    header:hover ul {
+        display: block;
+        opacity: 1;
+    }
+    
+    #mobileHide {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    #logo {
+        display: none;
+    }
+}
