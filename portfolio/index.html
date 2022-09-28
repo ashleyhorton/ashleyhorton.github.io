@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--
+
+*****************************************************************************
+
+Title:  Home
+
+Use:  Contains welcome message, headshot photo, about, and educational overview.
+
+Author:  Ashley Horton
+
+School/Term:  University of Missouri, Spring 2020
+
+Developed: March 21, 2020
+
+Tested:  May 12, 2020; Passed on Firefox and Chrome browsers.
+
+Last Edit: September 12, 2022
+
+******************************************************************************
+
+    -->
+   
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" type="text/css" href="nav2.css">
+
+            <title>Home</title>
+    
+            <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+    
+<header>
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="Ashley Horton Logo"></a>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="portfolio.html">Portfolio</a>
+                <ul id="mobileHide">
+                    <li><a href="portfolio.html#goal1">Goal 1</a></li>
+                    <li><a href="portfolio.html#goal2">Goal 2</a></li>
+                    <li><a href="portfolio.html#goal3">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="pdp.html">Professional Development Plan</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    
+<main id="index">
+    <h1 id="media_print" style="display: none;">Ashley Horton</h1>
+    <h2><strong>Welcome to my online portfolio!</strong></h2>
+    
+    <div class="row">
+        <div class="column_left" style="background-color:#fff;">
+            <figure>
+            <img id="headshot" src="images/headshot.jpg" width="300" 
+                 height="auto" alt="Ashley Horton Headshot"/>
+                <figcaption>
+                    <blockquote><em>"If we want to change things, we must first change ourselves. If we want to play - if we want to change the world - we must first show up on the field to score." 
+                    <br>
+                    - Paul Rusesabagina</em></blockquote>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="column_right" style="background-color:#fff;">
+            <h3>About Me</h3> 
+            <p>I was an elementary teacher with virtual experience for eleven years. This past year, I made the decision to leave the classroom and follow my passion in instructional design. I am now a Digital Learning Developer with <a href="https://fueledbylaunch.com/" target="_blank" id="link">LAUNCH</a> at Springfield Public Schools. I have a Master of Arts degree in K-12 School Administration and will be completing my Educational Specialist in Learning Technologies and Design degree in December of 2022.</p>
+        
+            <h3>Education Overview</h3>
+            <ul id="ul_bullet">
+                    <li><strong>Educational Specialist in Learning Technologies and Design</strong>
+                        <br>
+                        School of Information Science and Learning Technologies | University of Missouri
+                        <br>
+                        Completion Date: Fall 2022</li>
+                    <li><strong>Master of Arts in School Administration | Grades K-12</strong>
+                        <br>
+                        Lindenwood University
+                        <br>
+                        May 2014</li>
+                    <li><strong>Bachelor of Science in Elementary Education | Grades 1-6</strong>
+                        <br>
+                        Missouri State University
+                        <br>
+                        December 2010</li>
+                </ul>   
+        </div>
+    </div> 
+<h2>Program Goals</h2>
+<section class="flex_goals">
+    <div><h3 class="h3_goal">Goal 1 &amp; Objectives</h3>
+    <p class="p_goal">I can design and develop systems that are theory-grounded and research-based to promote student engagement and meaningful learning.</p>
+    <a href="portfolio.html#goal1" class="button_goals" style="vertical-align: middle; color:#ffffff;"><span>Learn More </span></a>  
+    </div>
+    
+    <div><h3 class="h3_goal">Goal 2 &amp; Objectives</h3>
+    <p class="p_goal">I can use critical and analytical skills to optimize data collected to design and develop learning opportunities and measure learning impact.</p>
+    <a href="portfolio.html#goal2" class="button_goals" style="vertical-align: middle; color:#ffffff;"><span>Learn More </span></a>  
+    </div>
+    
+    <div><h3 class="h3_goal">Goal 3 &amp; Objectives</h3>
+    <p class="p_goal">I can demonstrate technology leadership and knowledge and perform ethically in response to current and future challenges of emerging technologies for learning.</p>
+    <a href="portfolio.html#goal3" class="button_goals" style="vertical-align: middle; color:#ffffff;"><span>Learn More </span></a>  
+    </div>
+    
+</section>
+    
+</main>
+
+<footer> 
+    Copyright &copy; 2022 Ashley Horton <a href="mailto:theashleyhorton@gmail.com"><img class="email_icon" src="images/email_icon.png" alt="email"/></a><a href="mailto:theashleyhorton@gmail.com">theashleyhorton@gmail.com</a> <img class="phone_icon" src="images/phone_icon.png" alt="phone"/> 314-258-0218
+    <br>
+    Last Modified: September 12, 2022
+</footer>
+
+</body>
+</html>

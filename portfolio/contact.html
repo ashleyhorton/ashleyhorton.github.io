@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--
+
+*****************************************************************************
+
+Title:  Contact
+
+Use:  Provide form for contact
+
+Author:  Ashley Horton
+
+School/Term:  University of Missouri, Spring 2020
+
+Developed: April 24, 2020
+
+Tested:  May 12, 2020; Passed on Firefox and Chrome browsers.
+
+Last Edit: September 12, 2022
+
+******************************************************************************
+
+-->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" type="text/css" href="nav2.css">
+    
+               <title>Contact</title>
+    
+                <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    
+    <style>
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="Ashley Horton Logo"></a>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="portfolio.html">Portfolio</a>
+                <ul id="mobileHide">
+                    <li><a href="portfolio.html#goal1">Goal 1</a></li>
+                    <li><a href="portfolio.html#goal2">Goal 2</a></li>
+                    <li><a href="portfolio.html#goal3">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="pdp.html">Professional Development Plan</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    
+    <div class="contact-form">
+        <h3 style="text-align: center">Contact Form</h3>
+        <form action="mailto:theashleyhorton@gmail.com?Subject=Portfolio%20Website%20Contact" 
+        method="post" enctype="text/plain">
+            
+            <div class="txtb">
+            <label>First Name</label>
+            <input type="text" name="First Name" autofocus placeholder="Your first name.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Last Name</label>
+            <input type="text" name="Last Name" placeholder="Your last name.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Email Address</label>
+            <input type="email" name="Email Address" placeholder="Your email address.." required>
+            </div>
+                <br>
+            <div class="txtb">
+            <label>Message:</label>
+            <input type="text" required>
+            <textarea></textarea>
+            </div>    
+                <br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</main>
+    
+<footer> 
+    Copyright &copy; 2022 Ashley Horton <a href="mailto:theashleyhorton@gmail.com"><img class="email_icon" src="images/email_icon.png" alt="email"/></a><a href="mailto:theashleyhorton@gmail.com">theashleyhorton@gmail.com</a> <img class="phone_icon" src="images/phone_icon.png" alt="phone"/> 314-258-0218 &nbsp; &nbsp; Last Modified: September 12, 2022
+    <br>
+    <a id="phone_icon" href="https://icons8.com/icon/44034/phone">Phone icon</a>&nbsp;&nbsp;&nbsp;<a id="email_icon" href="https://icons8.com/icon/48165/gmail">Gmail icon</a>&nbsp;&nbsp;&nbsp;<a id="linkedin_icon" href="https://icons8.com/icons/set/linkedin">LinkedIn icon</a>
+</footer>
+    
+</body>
+</html>
